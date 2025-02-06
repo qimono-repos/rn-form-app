@@ -1,0 +1,9 @@
+version: "3.9" # Use a compatible version
+
+services:
+  web:
+      build: .
+          ports:
+	        - "19000:19000" 
+		    volumes:
+		          - ./:/app 
